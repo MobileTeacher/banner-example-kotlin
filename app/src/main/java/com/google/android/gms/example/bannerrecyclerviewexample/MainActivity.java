@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Specify a linear layout manager.
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        //
         recyclerView.setLayoutManager(layoutManager);
 
         // Update the RecyclerView item's list with menu items and banner ads.
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Specify an adapter.
         RecyclerView.Adapter<RecyclerView.ViewHolder> adapter = new RecyclerViewAdapter(this,
-            recyclerViewItems);
+                recyclerViewItems);
         recyclerView.setAdapter(adapter);
     }
 
